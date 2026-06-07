@@ -1,0 +1,73 @@
+<!Doctype html>
+<html>
+<head>
+<link rel="icon" href="C:\Users\Hp\Downloads\wallet.png" /> <title> Smart Wallet </title>
+<style>
+  /* This centers everything on the screen perfectly */
+  html, body {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* The white box for the form */
+  .container {
+    background: white;
+    padding: 30px;
+    border: 2px solid #333;
+    text-align: center;
+    border-radius: 8px; /* Smooths the corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  /* Styling the inputs to be neat and stacked */
+  input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 250px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  /* The Login Button */
+  .login-btn {
+    background-color: #28a745; /* Green color for 'success' or 'create' */
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .login-btn:hover {
+    background-color: #218838;
+  }           
+</style>
+</head>
+<body>
+<h1 style="color: Purple; font-family: Halvetica; font-size:50px;">Smart Campus Wallet</h1>
+<div class="container">
+<fieldset>
+<legend> <h2>Student Login</h2> </legend>
+    <form action="login_process.php" method="POST">
+        <input type="text" name="Student_ID" placeholder="Enter ID" required>
+        <input type="password" name="Password" placeholder="Enter Password" required>
+		<a href="C:\Users\Hp\Desktop\Student_Wallet\Student.html" target="_blank"> 
+		<button type="submit" class="login-btn">Login</button> 
+		</a>
+    </form>
+    <div class="footer-links" style="margin-top: 20px; text-align: center;">
+    <p>Don't have an account? 
+        <a href="Registration.html" style="color: #6c5ce7; font-weight: 600; text-decoration: none;">Register here</a>
+    </p>
+</div>
+</fieldset>
+</div>
+</body>
+</html>

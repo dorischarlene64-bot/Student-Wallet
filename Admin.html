@@ -1,0 +1,64 @@
+<!Doctype html>
+<html>
+<head>
+<title> Admin Dashboard </title>
+<style>
+  /* This centers everything on the screen perfectly */
+  html, body {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* The white box for the form */
+  .container {
+    background: white;
+    padding: 30px;
+    border: 2px solid #333;
+    text-align: center;
+    border-radius: 8px; /* Smooths the corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  /* Styling the inputs to be neat and stacked */
+  input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 250px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  /* The Fund Button */
+  .fund-btn {
+    background-color: green; /* Green color for 'success' or 'create' */
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .fund-btn:hover {
+    background-color: #218838;
+  }                  
+</style>
+<body>
+<div class="container">
+<fieldset>
+<legend> <h2>Admin: Wallet Recharge</h2> </legend>
+    <form action="add_funds.php" method="POST">
+        <input type="text" placeholder="Enter Student ID"  name="Student_ID" required>
+        <input type="number" placeholder="Amount to Add (PTS)" step="0.01"  name="Amount" required>
+        <button type="submit" class="fund-btn">Add Funds</button>
+    </form>
+</fieldset>
+</div>
+</body>
+</html>
